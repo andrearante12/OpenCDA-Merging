@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<configuration>
+  <input>
+        <net-file value="Merging.net.xml"/>
+    <route-files value="Merging.rou.xml"/>
+  </input>
+  <num-clients value="1"/>
+</configuration>
