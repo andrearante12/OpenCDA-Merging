@@ -29,13 +29,15 @@ TODO: Instructions
 
 ## Highway Ramp Merging
 
-<video width="640" height="360" controls>
+<!-- <video width="640" height="360" controls>
   <source src="https://raw.githubusercontent.com/andrearante12/OpenCDA-Merging/main/docs/videos/Highway_Merging.mp4" type="video/mp4">
   Your browser does not support the video tag.
-</video>
+</video> -->
+![Demo](docs/videos/Highway_Merging.gif)
+
 
 **Direct video link:**  
-[docs/videos/Highway_Merging.mp4]([docs/videos/Highway_Merging.mp4](https://drive.google.com/file/d/1Hs_uRpgNFZAZMX0sKVQj1hHYGlIakilB/view?usp=sharing))
+[docs/videos/Highway_Merging.mp4](docs/videos/Highway_Merging.mp4)
 
 Here we can see an example scenario of an ego vehicle attempting to merge onto a busy freeway.
 
