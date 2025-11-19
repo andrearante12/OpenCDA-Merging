@@ -41,6 +41,14 @@ TODO: Instructions
 
 Here we can see an example scenario of an ego vehicle attempting to merge onto a busy freeway.
 
+## Running the simulation locally
+
+In the root directory of this repo run
+```
+conda activate opencda
+python opencda.py -t merging  -v 0.9.12 
+```
+
 ---
 
 ## Important Files that Describe the Simulation  
