@@ -25,7 +25,7 @@ TODO: Instructions
 ## Highway Ramp Merging
 
 <video width="640" height="360" controls>
-  <source src=".\docs\videos\Highway_Merging.mp4" type="video/mp4">
+  <source src=".\docs\videos\Highway_Merging.mp4" type="video/mp4" alt="https://github.com/andrearante12/OpenCDA-Merging/blob/main/docs/videos/Highway_Merging.mp4">
   Your browser does not support the video tag.
 </video>
 
