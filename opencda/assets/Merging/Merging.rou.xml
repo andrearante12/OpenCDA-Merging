@@ -18,5 +18,5 @@
     <flow id="f_4" type="customType" begin="0.50" departLane="5" from="-35.0.00" to="-38.0.00" probability="0.5"/>
 
     <!-- Ego Vehicles -->
-    <vehicle id="ego1" type="egoType" route="route0" depart="20.00" departLane="2" departSpeed="max" color="red"/>
+    <vehicle id="ego1" type="egoType" route="route1" depart="20.00" departLane="2" departSpeed="max" color="red"/>
 </routes>

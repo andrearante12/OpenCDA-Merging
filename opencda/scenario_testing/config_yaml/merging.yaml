@@ -37,24 +37,24 @@ sumo:
 
 
 # define scenario. In this scenario, only a single CAV will be spawned
-scenario:
-  single_cav_list: # this is for merging vehicle or single cav without v2x
-    - name: cav1
-      spawn_position: [47.7194, 139.51, 0.3, 0, 0, 0]
-      destination: [600, 145.51, 0.3]
-      sensing:
-        perception:
-          camera:
-            visualize: 1 # how many camera images need to be visualized. 0 means no visualization for camera
-            num: 1 # how many cameras are mounted on the vehicle. Maximum 3(frontal, left and right cameras)
-            # relative positions (x,y,z,yaw) of the camera. len(positions) should be equal to camera num
-            positions:
-              - [2.5, 0, 1.0, 0]
-          lidar:
-            visualize: false
-      v2x:
-        communication_range: 45
-      behavior:
-        local_planner:
-          debug_trajectory: false
-          debug: false
+# scenario:
+  # single_cav_list: # this is for merging vehicle or single cav without v2x
+  #   - name: cav1
+  #     spawn_position: [47.7194, 139.51, 0.3, 0, 0, 0]
+  #     destination: [600, 145.51, 0.3]
+  #     sensing:
+  #       perception:
+  #         camera:
+  #           visualize: 1 # how many camera images need to be visualized. 0 means no visualization for camera
+  #           num: 1 # how many cameras are mounted on the vehicle. Maximum 3(frontal, left and right cameras)
+  #           # relative positions (x,y,z,yaw) of the camera. len(positions) should be equal to camera num
+  #           positions:
+  #             - [2.5, 0, 1.0, 0]
+  #         lidar:
+  #           visualize: false
+  #     v2x:
+  #       communication_range: 45
+  #     behavior:
+  #       local_planner:
+  #         debug_trajectory: false
+  #         debug: false

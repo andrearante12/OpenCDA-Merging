@@ -35,12 +35,6 @@ def run_scenario(opt, scenario_params):
             sumo_file_parent_path=sumo_cfg
         )
 
-        # ❗️DON'T create vehicle managers from the YAML scenario
-        # This is the line that was spawning the extra CARLA car:
-        # single_cav_list = scenario_manager.create_vehicle_manager(
-        #     application=['single'],
-        #     map_helper=map_api.spawn_helper_2lanefree
-        # )
         single_cav_list = []
 
         # create evaluation manager (still OK to create)
