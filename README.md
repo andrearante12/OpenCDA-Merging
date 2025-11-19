@@ -35,7 +35,7 @@ TODO: Instructions
 </video>
 
 **Direct video link:**  
-[docs/videos/Highway_Merging.mp4](docs/videos/Highway_Merging.mp4)
+[docs/videos/Highway_Merging.mp4]([docs/videos/Highway_Merging.mp4](https://drive.google.com/file/d/1Hs_uRpgNFZAZMX0sKVQj1hHYGlIakilB/view?usp=sharing))
 
 Here we can see an example scenario of an ego vehicle attempting to merge onto a busy freeway.
 
