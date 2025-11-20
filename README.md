@@ -6,24 +6,81 @@ A fork of the OpenCDA repo — see the [original documentation](BASE_README.md) 
 
 ## Users Guide
 * [Installation](#installation)
-* [Creating a Custom Scenario](#creating-a-custom-scenario)
 
-## Scenarios (SUMO/CARLA)
+## Co-Simulation Scenarios
 * [Highway Ramp Merging](#highway-ramp-merging)
 
 ---
 
 # Installation
 
-TODO: Installation instructions
+Here is a link to the official documentation for refrence [link](https://opencda-documentation.readthedocs.io/en/latest/md_files/installation.html). Be aware that I was not able to get this codebase to work by following the documentation exactly and had to follow the path described below.
 
----
+## System Requirements
 
-# Creating a Custom Scenario
+This build was testing with the following specs
+* <b>System Requirements:</b> Ubuntu 24.04
+* <b>Adequete GPU</b> 8GB recommended by docs but the simulation will run (poorly) on a system without a GPU like mine
+* <b>Python Version</b>: <span style="color: orange">todo</span>
 
-TODO: Instructions
+## Building Carla (0.9.12)
 
----
+This repo was tested with Carla version `0.9.12`. Download here: [link](https://github.com/carla-simulator/carla/releases)
+
+* The AdditionalMaps_0.9.12.tar.gz also need to be downloaded and extract to the CARLA repo to support scenario testings in Town06. 
+* Building from source is not required
+
+## OpenCDA Installation
+
+First, download OpenCDA github to your local folder if you haven’t done it yet.
+
+```
+git clone https://github.com/ucla-mobility/OpenCDA.git
+cd OpenCDA
+```
+
+Make sure you are in the root dir of OpenCDA, and next let’s install the dependencies. We highly recommend use conda environment to install.
+
+```
+conda env create -f environment.yml
+conda activate opencda
+python setup.py develop
+```
+
+If conda install failed, install through pip
+
+```
+pip install -r requirements.txt
+```
+
+After dependencies are installed, we need to install the CARLA python library into opencda conda environment. You can do this by running this script:
+```
+export CARLA_HOME=/path/to/your/CARLA_ROOT
+export CARLA_VERSION=0.9.12
+. setup.sh
+```
+
+## SUMO Installation (Required for co-simulation)
+
+You can install SUMO directly by apt-get:
+
+```
+sudo add-apt-repository ppa:sumo/stable
+sudo apt-get update
+sudo apt-get install sumo sumo-tools sumo-doc
+```
+
+After that, install the traci python package.
+
+```
+pip install traci
+```
+
+Finally, add the following path to your ~/.bashrc:
+
+```
+export SUMO_HOME=/usr/share/sumo
+```
 
 # Scenarios Descriptions
 
