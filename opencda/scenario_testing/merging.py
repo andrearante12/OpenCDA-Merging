@@ -1,7 +1,3 @@
-# -*- coding: utf-8 -*-
-# Author: Runsheng Xu <rxx3386@ucla.edu>
-# License: TDG-Attribution-NonCommercial-NoDistrib
-
 import os
 
 import carla
@@ -37,15 +33,13 @@ def run_scenario(opt, scenario_params):
 
         single_cav_list = []
 
-        # create evaluation manager (still OK to create)
         eval_manager = EvaluationManager(
             scenario_manager.cav_world,
             script_name='single_2lanefree_cosim',
             current_time=scenario_params['current_time']
         )
 
-        # You can still set the spectator, but now we don't have a CARLA vehicle
-        # to attach to. So just place it at a fixed spot.
+        # Set spectator to a fixed spot.
         spectator = scenario_manager.world.get_spectator()
         spectator.set_transform(
             carla.Transform(
@@ -58,7 +52,6 @@ def run_scenario(opt, scenario_params):
             # tick CARLA + SUMO
             scenario_manager.tick()
 
-            # no CAVs to update or control now
             # for single_cav in single_cav_list:
             #     single_cav.update_info()
             #     control = single_cav.run_step()
